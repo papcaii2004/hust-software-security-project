@@ -4,6 +4,8 @@ A security analysis project for the Xpdf PDF reader, focusing on vulnerability d
 
 ## Install prerequisites
 
+> These instructions are run in `Ubuntu Linux 24.04`
+
 ```bash
 # 1. Update system
 sudo apt update
@@ -12,7 +14,7 @@ sudo apt update
 sudo apt install -y build-essential cmake git wget unzip clang llvm
 
 # 3. Install Xpdf Dependencies (Bắt buộc)
-sudo apt install -y libfreetype6-dev libfontconfig1-dev libpng-dev zlib1g-dev
+sudo apt install -y libfreetype6-dev libfontconfig1-dev libpng-dev zlib1g-dev libtiff-dev liblcms2-dev libjpeg-dev
 
 # 4. Install Security Tools
 sudo apt install -y afl++ radamsa cppcheck gdb
