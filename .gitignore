@@ -1,0 +1,38 @@
+# --- Build Artifacts (BẮT BUỘC) ---
+# Không bao giờ push các file sinh ra từ quá trình build (cache, binary)
+/build_afl/
+/build_normal/
+
+# Tự động sinh ra bởi CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# File cấu hình của các hệ thống khác
+.vscode/
+.idea/
+
+# --- Temporary/Log Files ---
+# Log từ Fuzzing và các file tạm
+*.log
+*.tmp
+*.out
+
+# Crash Fuzzing Output (Bạn có thể đẩy file crash lên nếu muốn, 
+# nhưng thường chỉ cần những file gây crash nhỏ nhất)
+/fuzzing/*/out/
+/fuzzing/afl_out/
+/fuzzing/radamsa_out/
+
+# Output của Static Analysis (Thường là file rất lớn)
+/static_analysis/
+/results/
+
+# Source code files (nếu bạn không muốn đẩy source gốc lên)
+# Nhưng với project này, NÊN ĐẨY SOURCE Xpdf VÀO /xpdf-4.00/src/
+# Nếu bạn đã làm, thì không cần dòng nào ở dưới đây
+
+# Các file backup
+*.bak
+*.orig
