@@ -11,12 +11,17 @@
 cmake_minimum_required(VERSION 2.8.8)
 
 project(xpdf)
+include_directories(${CMAKE_BINARY_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/goo ${CMAKE_CURRENT_SOURCE_DIR}/fofi ${CMAKE_CURRENT_SOURCE_DIR}/splash)
 
 include_directories("/usr/include/freetype2")
 
 include(cmake-config.txt)
 
 set(HAVE_FREETYPE_H 1)
+find_package(PNG REQUIRED)
+find_package(ZLIB REQUIRED)
 set(FREETYPE_LIBRARY "/usr/lib/x86_64-linux-gnu/libfreetype.so")
 set(FREETYPE_FOUND TRUE)
 
