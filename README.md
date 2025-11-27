@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install -y build-essential cmake git wget unzip clang llvm
 
 # 3. Install Xpdf Dependencies (Fix Linker Errors)
-sudo apt install -y libfreetype6-dev libfontconfig1-dev libpng-dev zlib1g-dev libtiff-dev liblcms2-dev libjpeg-dev
+sudo apt install -y libfreetype6-dev libfontconfig1-dev libpng-dev zlib1g-dev libtiff-dev liblcms2-dev libjpeg-dev pkg-config libpaper-dev
 
 # 4. Install Security Tools (Fuzzing/Static/Debug)
 sudo apt install -y afl++ radamsa cppcheck gdb
