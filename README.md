@@ -32,7 +32,6 @@ sudo apt install -y afl++ radamsa cppcheck gdb
 
 
 - Clone this repo
-- 
 ```bash
 git clone https://github.com/papcaii2004/hust-software-security-project.git
 ```
