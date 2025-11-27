@@ -14,11 +14,11 @@ project(xpdf)
 
 include_directories("/usr/include/freetype2")
 
+include(cmake-config.txt)
+
 set(HAVE_FREETYPE_H 1)
 set(FREETYPE_LIBRARY "/usr/lib/x86_64-linux-gnu/libfreetype.so")
 set(FREETYPE_FOUND TRUE)
-
-include(cmake-config.txt)
 
 if (HAVE_PAPER_H)
   set(PAPER_LIBRARY ${HAVE_PAPER_H})
