@@ -38,14 +38,14 @@ git clone https://github.com/papcaii2004/hust-software-security-project.git
 
 - We have 2 modes for compiling
 
-1. Mode 1: Build with gcc (default)
+  - Mode 1: Build with gcc (default)
 
 ```bash
 chmod +x scripts/build_normal.sh
 ./scripts/build_normal.sh
 ```
 
-2. Mode 2: Build with AFL++ (For optimal fuzzing)
+  - Mode 2: Build with AFL++ (For optimal fuzzing)
 
 ```bash
 chmod +x scripts/build_afl.sh
