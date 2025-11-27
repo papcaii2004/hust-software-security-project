@@ -28,10 +28,7 @@ cmake ../xpdf-4.00/src \
   -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_DISABLE_FIND_PACKAGE_Qt4=1 \
   -DCMAKE_DISABLE_FIND_PACKAGE_Qt5Widgets=1 \
-  -DCMAKE_C_FLAGS="-fsanitize=address -g -I/usr/include/freetype2" \
-  -DCMAKE_CXX_FLAGS="-fsanitize=address -g -std=c++11 -I/usr/include/freetype2" \
-  -DCMAKE_EXE_LINKER_FLAGS="-fsanitize=address" \
-  -DHAVE_FREETYPE_H=1
+  -DCMAKE_CXX_FLAGS="-std=c++11"
 
 # 4. Compile
 echo "[*] Compiling..."

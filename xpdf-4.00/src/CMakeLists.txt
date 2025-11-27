@@ -12,6 +12,12 @@ cmake_minimum_required(VERSION 2.8.8)
 
 project(xpdf)
 
+include_directories("/usr/include/freetype2")
+
+set(HAVE_FREETYPE_H 1)
+set(FREETYPE_LIBRARY "/usr/lib/x86_64-linux-gnu/libfreetype.so")
+set(FREETYPE_FOUND TRUE)
+
 include(cmake-config.txt)
 
 if (HAVE_PAPER_H)
